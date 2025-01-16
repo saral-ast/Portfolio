@@ -18,7 +18,6 @@ body {
 /* Header */
 #header-section {
     background-color: #d4d4d4;
-    /* background: rgb(232,232,232); */
     color: #383942;
     padding-left: 4rem;
     display: flex;
@@ -60,13 +59,10 @@ body {
 /* Home hero section */
 
 #home {
-    /* background: rgb(232,232,232); */
-   
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     background-color: #d4d4d4;
     color: #383942;
-    /* margin-bottom: 0.3%; */
    
 }
 
@@ -75,10 +71,6 @@ body {
     background-color: transparent;
     height: 80%;
     margin-top: 20%;
-    /* border-radius: 60%; */
-    /* border: 1px solid #694ab3; */
-    /* box-shadow: 0 0 12px 12px #694ab3; */
-
 }
 
 #hero {
@@ -110,10 +102,11 @@ body {
     grid-template-areas: 
     "header header"
     "image content";
+
     background: hsla(0, 0%, 83%, 1);
-    background: linear-gradient(315deg, hsla(0, 0%, 83%, 1) 55%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
-    background: -moz-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 55%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
-    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 55%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);    
+    background: linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4D4D4", endColorstr="#BB77ED", GradientType=1 );
 }
 #about h2{
@@ -123,7 +116,8 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     padding: 1.5%;
-    /* border: 1px solid #694ab3; */
+    justify-self: center;
+ 
 }
 #about img{
     grid-area: image;
@@ -133,25 +127,14 @@ body {
     margin-top: 2%;
     margin-left: 16%;
     padding: 0.2%;
-    /* border: 1px solid #694ab3; */
     box-shadow: 12px 12px 12px 12px #694ab3;
-    /* align-items: flex-start; */
-    /* justify-self: center; */
     justify-items: flex-start;
-
-
-    /* background: transparent; */
-    /* row-gap: 2rem; */
     margin-right: 2rem;
 }
 
 #about #about-me{
     grid-area: content;
-    /* display: flex; */
     color: #383942;
-    /* align-items: center; */
-    /* margin-top: 2%; */
-    /* border: 1px solid #694ab3; */
     justify-content: center;
     padding: 10%;
     margin-right: 5%;
@@ -161,12 +144,57 @@ body {
     font-size: 1rem;
     color: #302b3d;
     font-weight: 400;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 1rem; */
-
 }
+
+
+/* skills secction */
+#skills {
+    background-color: #d4d4d4;
+    color: #383942;
+    padding: 3rem;
+    text-align: center;
+}
+
+
+
+#skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    /* background-color: #f0f0f0; */
+    align-items: center;
+    justify-items: center;
+    /* font-size: large; */
+}
+
+#skills h3 {
+    /* grid-area: header; */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #383942;
+    font-weight: 1000;
+}
+
+#skill-list figure {
+    text-align: center;
+}
+
+#skill-list img {
+    grid-area: image;
+    max-width: 60%;
+    margin-bottom: 10px;
+}
+
+#skill-list figcaption {
+    font-weight: 300;
+}
+
+
+
+
 
 
 /* footer */
@@ -223,6 +251,5 @@ footer aside a{
 footer aside a:hover{
     text-decoration: underline;
     color: #cecece;
-    /* background-color: #09122C; */
 }
 
