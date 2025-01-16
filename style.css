@@ -159,6 +159,15 @@ body {
 
 
 
+
+
+#skills h3 {
+    /* grid-area: header; */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #383942;
+    font-weight: 1000;
+}
 #skill-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -168,14 +177,6 @@ body {
     align-items: center;
     justify-items: center;
     /* font-size: large; */
-}
-
-#skills h3 {
-    /* grid-area: header; */
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #383942;
-    font-weight: 1000;
 }
 
 #skill-list figure {
@@ -190,6 +191,67 @@ body {
 
 #skill-list figcaption {
     font-weight: 300;
+}
+
+
+
+
+/* project section */
+#projects {
+    padding: 40px;
+    /* background-color: aliceblue; */
+    background: hsla(0, 0%, 83%, 1);
+    background: linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 77%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 83%, 1) 70%, hsla(275, 77%, 70%, 1) 100%, hsla(351, 88%, 62%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D4D4D4", endColorstr="#BB77ED", GradientType=1 );
+
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #383942;
+    font-weight: 1000;
+    font-size: 2rem;
+    padding-bottom: 4%;
+}
+
+#all-project  {
+    /* border: 1px solid #000000; */
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    gap: 30px;
+}
+
+#projects figure {
+   text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background-color: #f0f0f0; */
+    box-shadow: 10px 0 10px 5px #783fad;
+}
+
+#projects img {
+    max-width: 80%;
+    max-height: 65% ;
+    padding-top: 4%;
+    border-radius: 20px;
+}
+
+#projects a {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    color: #0073e6;
 }
 
 
