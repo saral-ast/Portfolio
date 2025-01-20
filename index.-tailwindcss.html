@@ -10,205 +10,175 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./Media//favicon_io (2)//apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Media//favicon_io (2)//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Media/favicon_io (2)/">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
     <link rel="stylesheet" href="./tailwind.css">
 </head>
-<body class="font-serif bg-gray-100 leading-relaxed">
+<body class="font-serif bg-gray-300 leading-relaxed">
     <!-- Header section with nav -->
-    <section id="header-section" class="bg-gray-300 text-gray-800 pl-16 flex justify-between items-center h-20 w-full fixed mb-20">
+    <section id="header-section" class="bg-gray-300 text-gray-800 px-4 md:px-16 flex justify-between items-center h-20 w-full fixed">
         <header class="text-left w-full text-xl">
             <h1 class="text-3xl font-bold">Saral Chauhan</h1>
         </header>
-        <nav id="nav" class="flex justify-end gap-8 pr-16 w-full">
-            <a href="#home" class="text-gray-800 no-underline text-xl  hover:underline hover:text-purple-600">Home</a>
-            <a href="#about" class="text-gray-800 no-underline text-xl  hover:underline hover:text-purple-600">About</a>
-            <a href="#projects" class="text-gray-800 no-underline text-xl f hover:underline hover:text-purple-600">Projects</a>
-            <a href="#contact" class="text-gray-800 no-underline text-xl  hover:underline hover:text-purple-600">Contact</a>
-            <a href="./Media/MyResume.pdf" id="resume-dwd" class="text-gray-800 no-underline text-xl  hover:underline hover:text-purple-600"><i class="fa-solid fa-file"></i> Resume</a>
+        <nav id="nav" class="flex flex-wrap justify-end gap-4 md:gap-8 pr-4 md:pr-16 w-full">
+            <a href="#home" class="text-gray-800 no-underline text-lg md:text-xl hover:underline hover:text-purple-600">Home</a>
+            <a href="#about" class="text-gray-800 no-underline text-lg md:text-xl hover:underline hover:text-purple-600">About</a>
+            <a href="#projects" class="text-gray-800 no-underline text-lg md:text-xl hover:underline hover:text-purple-600">Projects</a>
+            <a href="#contact" class="text-gray-800 no-underline text-lg md:text-xl hover:underline hover:text-purple-600">Contact</a>
+            <a href="#resume" class="text-gray-800 no-underline text-lg md:text-xl hover:underline hover:text-purple-600"><i class="fa-solid fa-file"></i>Resume</a>
         </nav>
     </section>
-     
-<!-- Home section with image and intro -->
-<section id="home" class="grid grid-cols-2 bg-gray-300 text-gray-800 p-12">
-    <aside id="hero" class="text-center justify-self-center self-center">
-        <h1 id="intro" class="text-5xl font-extrabold text-purple-600 py-5">I'm Saral Chauhan</h1>
-        <p class="text-2xl font-light text-slate-600 ">Trainee Intern at ArsenalTech Pvt.Ltd</p>
-        <p class="text-2xl font-light text-slate-600">@Front-End Developer</p>
-    </aside>
-    <img src="./Media/IMG20230901114042-Photoroom.png" alt="myphoto" class="myphoto max-w-[40vw] bg-transparent max-h-[70vh] place-self-end" >
-</section>
 
-<!-- About Section -->
-     <section id="about">
-        <h2>About</h2>
-        <img src="./Media/IMG_20241229_103432.png" alt="myphoto" class="myphoto" id="myhoto" >
-        <div id="about-me">
-            <p>Hello, I'm Saral Chauhan, a dedicated and passionate Information Technology student at Charotar University of Science and Technology (CHARUSAT), expected to graduate in April 2025. With a GPA of 7.09/10.00, I am committed to continuous learning and building innovative solutions.</p><br>
+    <!-- Home section -->
+    <section id="home" class="grid grid-cols-1 md:grid-cols-2 bg-gray-300 text-gray-800 p-4 md:p-12">
+        <aside id="hero" class="text-center justify-self-center self-center">
+            <h1 id="intro" class="text-4xl md:text-5xl font-extrabold text-purple-600 py-5">I'm Saral Chauhan</h1>
+            <p class="text-xl md:text-2xl font-light text-slate-600">Trainee Intern at ArsenalTech Pvt. Ltd</p>
+            <p class="text-xl md:text-2xl font-light text-slate-600">@Front-End Developer</p>
+        </aside>
+        <img src="./Media/IMG20230901114042-Photoroom.png" alt="myphoto" class="myphoto max-w-full md:max-w-[40vw] bg-transparent max-h-[70vh] place-self-end mt-4">
+    </section>
 
-            <p>My journey in the field of technology began in 2019 when I started learning the basics of programming languages like C, C++, and Java. I have since developed a keen interest in web development and have been working on projects to enhance my skills.</p><br>
-
-            <p>I have hands-on experience in Java Full Stack Development and WordPress Development, gained through internships and projects. My technical expertise includes a range of programming languages such as C/C++, Java, and Python, alongside development tools like HTML, CSS, JavaScript, ReactJS, and database management with SQL.</p>
+    <!-- About Section -->
+    <section id="about" class="bg-gray-300 p-4 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <h2 class="text-3xl md:text-4xl font-bold col-span-1 md:col-span-2 text-center underline text-gray-800 mb-8">About</h2>
+        <img src="./Media/IMG_20241229_103432.png" alt="My Photo" class="w-2/3 md:w-1/2 mx-auto shadow-lg rounded-lg" id="myphoto">
+        <div id="about-me" class="text-base md:text-lg leading-relaxed text-center md:text-left space-y-4 p-4">
+            <p class="text-gray-800 text-justify">
+                Hello, I'm Saral Chauhan, a dedicated and passionate Information Technology student at Charotar University of Science and Technology (CHARUSAT), expected to graduate in April 2025. With a GPA of 7.09/10.00, I am committed to continuous learning and building innovative solutions.
+            </p>
+            <p class="text-gray-800">
+                My journey in the field of technology began in 2019 when I started learning the basics of programming languages like C, C++, and Java. I have since developed a keen interest in web development and have been working on projects to enhance my skills.
+            </p>
         </div>
     </section>
-       
-    <div id="skills">
-            <h3>Skills</h3>
-            <div id="skill-list">
-                <figure id="c/c++">
-                    <img src="./Media/skiils/cc.webp" alt="c/c++">
-                    <figcaption>C/C++</figcaption>
-                </figure>   
-                
-                <figure id="c/c++">
-                    <!-- <img src="./Media/skiils/aa9zxztd8.webp" alt="Java"> -->
-                    <i class="fa-brands fa-java"></i>
-                    <figcaption>Java</figcaption>
-                </figure>
 
-                <figure id="c/c++">
-                    <!-- <img src="./Media/skiils/HTML5_Badge_512.webp" alt="html"> -->
-                    <i class="fa-brands fa-html5"></i>
-                    <figcaption>HTML</figcaption>
-                </figure>
-
-                <figure id="CSS">
-                    <!-- <img src="./Media/skiils/png-transparent-website-web-internet-css-style-css3-technology-social-media-logos-i-flat-colorful-icon-thumbnail.webp" alt="c/c++"> -->
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <figcaption>CSS</figcaption>
-                </figure>
-
-                <figure id="JS">
-                    <!-- <img src="./Media/skiils/png-clipart-javascript-logo-computer-icons-vue-js-angle-text-thumbnail.webp" alt="JS"> -->
-                    <i class="fa-brands fa-js"></i>
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-
-                <figure id="ReactJS">
-                    <!-- <img src="./Media/skiils/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.webp" alt="ReactJS"> -->
-                    <i class="fa-brands fa-react"></i>
-                    <figcaption>ReactJS</figcaption>
-                </figure>
-
-            </div>
-        </div>
-    <!-- </section> -->
-
-    <!-- Projects Section -->
-     <section id="projects">
-        <h2>Project</h2>
-        <div id="all-project">
-            <div class="project">
+    <section id="projects" class=" bg-gray-300">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Projects</h2>
+        <div id="all-project" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pd-4">
+            <div class="project p-4 bg-gray-200 rounded-lg shadow-lg">
                 <figure id="music">
-                    <img src="./Media//project/music-player-7792956_1920.webp" alt="music player" height="200px" width="300px">
-                    <figcaption>Music Player</figcaption>
-                    <p id="description">Built a modern music player website with an immersive user interface using HTML, CSS, and JavaScript.</p>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/21it020/Summer_Internship_2024-21IT020/tree/main/Major_project/Music-Player" target="_blank">github</a>
+                    <img src="./Media/project/music-player-7792956_1920.webp" alt="music player" class="w-full h-48 object-cover rounded-t-lg">
+                    <figcaption class="text-center font-semibold mt-4 text-xl text-gray-800">Music Player</figcaption>
+                    <p class="text-center mt-2 text-gray-700">Built a modern music player website with an immersive user interface using HTML, CSS, and JavaScript.</p>
+                    <div class="text-center mt-4">
+                        <i class="fa-brands fa-github text-lg mr-2"></i>
+                        <a href="https://github.com/21it020/Summer_Internship_2024-21IT020/tree/main/Major_project/Music-Player" target="_blank" class="text-purple-500 hover:text-purple-700">GitHub</a>
+                    </div>
                 </figure>
             </div>
-            <div class="project">
+    
+            <div class="project p-4 bg-gray-200 rounded-lg shadow-lg">
                 <figure id="student-analysis">
-                    <img src="./Media/project/write-4491416_1920.webp" alt="student-analysis" height="200px" width="300px">
-                    <figcaption>Student Dropout-Analysis</figcaption>
-                    <p id="description">Designed for government officials to monitor student dropout rates, utilizing HTML, CSS, Bootstrap, and PHP</p>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/21it020/Student-dropout-analysis" target="_blank">github</a>
+                    <img src="./Media/project/write-4491416_1920.webp" alt="student-analysis" class="w-full h-48 object-cover rounded-t-lg">
+                    <figcaption class="text-center font-semibold mt-4 text-xl text-gray-800">Student Dropout-Analysis</figcaption>
+                    <p class="text-center mt-2 text-gray-700">Designed for government officials to monitor student dropout rates, utilizing HTML, CSS, Bootstrap, and PHP</p>
+                    <div class="text-center mt-4">
+                        <i class="fa-brands fa-github text-lg mr-2"></i>
+                        <a href="https://github.com/21it020/Student-dropout-analysis" target="_blank" class="text-purple-500 hover:text-purple-700">GitHub</a>
+                    </div>
                 </figure>
             </div>
-            <div class="project">
+    
+            <div class="project p-4 bg-gray-200 rounded-lg shadow-lg">
                 <figure id="music">
-                    <img src="./Media/project/bus-8142339_1920.webp" alt="music player" height="200px" width="300px">
-                    <figcaption>School Univrse</figcaption>
-                    <p1  id="description">A MERN stack-based platform linking parents and students to schools, streamlining their decision-making process.</p>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/21it020/School_Universe" target="_blank">github</a>
+                    <img src="./Media/project/bus-8142339_1920.webp" alt="school universe" class="w-full h-48 object-cover rounded-t-lg">
+                    <figcaption class="text-center font-semibold mt-4 text-xl text-gray-800">School Univrse</figcaption>
+                    <p class="text-center mt-2 text-gray-700">A MERN stack-based platform linking parents and students to schools, streamlining their decision-making process.</p>
+                    <div class="text-center mt-4">
+                        <i class="fa-brands fa-github text-lg mr-2"></i>
+                        <a href="https://github.com/21it020/School_Universe" target="_blank" class="text-purple-500 hover:text-purple-700">GitHub</a>
+                    </div>
                 </figure>
             </div>
-            <div class="project">
+    
+            <div class="project p-4 bg-gray-200 rounded-lg shadow-lg">
                 <figure id="music">
-                    <img src="./Media/project/cast-8189824_1280.webp" alt="music player" height="200px" width="300px">
-                    <figcaption>Resume Builder</figcaption>
-                    <p id="description">Resume Builder app with React and Strapi for creating, editing and downloading professional resumes. </p>
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://github.com/21it020/Resume-Builder-PortfoLinks" target="_blank" class="git">github</a>
+                    <img src="./Media/project/cast-8189824_1280.webp" alt="resume builder" class="w-full h-48 object-cover rounded-t-lg">
+                    <figcaption class="text-center font-semibold mt-4 text-xl text-gray-800">Resume Builder</figcaption>
+                    <p class="text-center mt-2 text-gray-700">Resume Builder app with React and Strapi for creating, editing, and downloading professional resumes.</p>
+                    <div class="text-center mt-4">
+                        <i class="fa-brands fa-github text-lg "></i>
+                        <a href="https://github.com/21it020/Resume-Builder-PortfoLinks" target="_blank" class="text-purple-500 hover:text-purple-700">GitHub</a>
+                    </div>
                 </figure>
-            </div>
-
-        </div>
-     </section>
-<!-- resume conatiner -->
-
-       
-     <!-- Contact Section -->
-     <section id="contacts">
-        <h2>Contact</h2>
-        <div id="contact">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name"><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Your Message"></textarea><br>
-                <button type="submit">Send</button><br>
-            </form>
-
-       
-            <div id="resume">
-                <h2>Resume</h2>
-                <iframe src="./Media/MyResume.pdf" frameborder="0"></iframe><br>
-                <button id="dwd"><a href="./Media/MyResume.pdf" download>Download</a></button>
             </div>
         </div>
-     </section>
+    </section>
+    
+
+    <!-- Resume Section -->
+<<section id="contacts" class="p-12 bg-gray-300">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Contact</h2>
+    <div id="contact" class="flex flex-col md:flex-row justify-between gap-8">
+        <form class="w-full md:w-1/2 bg-gray-200 p-6 rounded-lg shadow-lg">
+            <label for="name" class="block text-xl text-gray-800 mb-2">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label for="email" class="block text-xl text-gray-800 mb-2">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label for="message" class="block text-xl text-gray-800 mb-2">Message</label>
+            <textarea name="message" id="message" placeholder="Your Message" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            <button type="submit" class="w-full p-3 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600">Send</button>
+        </form>
+
+        <div id="resume" class="w-full md:w-1/2 bg-gray-200 p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Resume</h2>
+            <iframe src="./Media/MyResume.pdf" frameborder="0" class="w-full h-96 mb-4"></iframe>
+            <button class="w-full p-3 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600">
+                <a href="./Media/MyResume.pdf" download>Download Resume</a>
+            </button>
+        </div>
+    </div>
+</section>
 
 
-     <!-- footer secttion  -->
-      <footer>
-        <p>&copy; 2025 Saral Chauhan</p>
-        <p>Design and developed by Saral Chauhan</p>
 
-            <section id="pages">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Project</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Saral Chauhan</p>
+            <p>Design and developed by Saral Chauhan</p>
+    
+            <section id="pages" class="mt-4">
+                <ul class="flex justify-center space-x-8">
+                    <li><a href="#home" class="text-gray-500 hover:text-gray-300">Home</a></li>
+                    <li><a href="#about" class="text-gray-500 hover:text-gray-300">About</a></li>
+                    <li><a href="#projects" class="text-gray-500 hover:text-gray-300">Project</a></li>
+                    <li><a href="#contact" class="text-gray-500 hover:text-gray-300">Contact</a></li>
+                </ul>
             </section>
-
-            <aside id="links">
-                <address>
+    
+            <aside id="links" class="mt-6">
+                <address class="flex justify-center gap-fill">
                     <div>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+91 7046301682">+91 7046301682</a>
+                        <a href="tel:+91 7046301682" class="text-gray-500 hover:text-gray-300">+91 7046301682</a>
                     </div>
-
+    
                     <div>
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:saralchauhsn42@gmail.com">saralchauhsn424@gmail.com</a>
+                        <a href="mailto:saralchauhsn42@gmail.com" class="text-gray-500 hover:text-gray-300">saralchauhsn424@gmail.com</a>
                     </div>
+    
                     <div>
                         <i class="fa-brands fa-square-instagram"></i>
-                        <a href="https://www.instagram.com/_saral_22.24/" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/_saral_22.24/" target="_blank" class="text-gray-500 hover:text-gray-300">Instagram</a>
                     </div>
+    
                     <div>
                         <i class="fa-brands fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/saral-chauhan-840a4b227/" target="_blank">LinkedIn</a><br>
+                        <a href="https://www.linkedin.com/in/saral-chauhan-840a4b227/" target="_blank" class="text-gray-500 hover:text-gray-300">LinkedIn</a>
                     </div>
-                   
-                   <div>
+    
+                    <div>
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/21it020">github</a>
-                   </div>
-                    
+                        <a href="https://github.com/21it020" class="text-gray-500 hover:text-gray-300">GitHub</a>
+                    </div>
                 </address>
             </aside>
-            
-      </footer>
-</body>
+        </div>
+    </footer>
+    </body>
 </html>
