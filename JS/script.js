@@ -60,9 +60,13 @@ document.getElementById("contact").addEventListener("submit", function (e) {
 // Function to show error messages
 function showError(input, message) {
     const error = document.createElement("small");
+    
     error.classList.add("error");
     error.textContent = message;
+    
     input.parentElement.appendChild(error);
+    console.log(input);
+    // console.log(input);
 }
 // Notifications
 function showNotification(message, type) {
