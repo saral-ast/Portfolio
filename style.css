@@ -41,13 +41,26 @@ body {
     /* margin-bottom: 5vh; */
 }
 
+
 #header-section header {
    text-align: start;
    width: 100vw;
    font-size: 1.2vw;
 }
+#header-section header h1 {
+    font-size: 2vw;
+    /* color    : #694ab3; */
+    font-weight: 700;
+    padding-left: 1.1vw;
+}
 #header-section .fa-bars,.fa-x {
     display: none;
+}
+#header-section .fa-x{
+    font-size: 20px;
+    float: left;
+    top: 0;
+    padding-left: 1vw;
 }
 /* navbar */
 .hidden{
@@ -57,6 +70,7 @@ body {
     gap: 1.2vw;
     padding-right: 4vw;
     width: 100vw;
+    /* animation: ease-in-out; */
 
 
 }
@@ -669,6 +683,11 @@ footer aside a:hover{
     }
     .hidden{
         display: none;
+    }
+    #nav a{
+        padding-top: 2vw;
+        font-size: 4vw;
+        gap: 1.2vw;
     }
     
     #hero{

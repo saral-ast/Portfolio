@@ -1,6 +1,8 @@
 // Handle active nav links on scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".hidden a");
+// const h1 = document.querySelectorAll("#header-section header h1");
+const h1 = document.getElementById("header-h1");
 
 window.addEventListener("scroll", () => {
     let currentSection = "";
@@ -96,8 +98,11 @@ toggleButton.addEventListener("click", () => {
         navMenu.style.display = "flex";
         navMenu.style.flexDirection = "column";
         navMenu.style.alignItems = "center";
+        navMenu.style.animation = "ease-in-out 3s";
         toggleButton.style.display = "none";
         cancel.style.display = "block";
+        // console.log(h1);
+        h1.style.display = "none";
     
 
 });
@@ -106,6 +111,7 @@ cancel.addEventListener("click", () => {
     navMenu.style.display = "none";
     toggleButton.style.display = "block";
     cancel.style.display = "none";
+    h1.style.display = "block";
 });
 
 // Close menu on link click
@@ -115,6 +121,7 @@ navLinks.forEach((link) => {
         navMenu.style.display = "none";
         cancel.style.display = "none";
         toggleButton.style.display = "block";
+        h1.style.display = "block";
         // toggleButton.style.display = "block";
     });
 });
