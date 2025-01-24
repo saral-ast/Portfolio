@@ -64,9 +64,19 @@ body {
     font-weight: 600;
 }
 
+#nav a:active{
+    color: #6A42C2;
+    text-decoration: underline;
+}
+
+#nav .active{
+    color: #6A42C2;
+    text-decoration: underline;
+}
 #nav a:hover {
     text-decoration: underline;
     color: #6A42C2;
+    /* animation:infinite; */
 }
 
 
@@ -358,7 +368,7 @@ body {
 }
 
 #contact button {
-    background-color: #4a4e69;
+    background-color: #9900ff;
     color: white;
     padding: 10px 20px;
     /* align-items: center; */
@@ -467,10 +477,7 @@ footer aside a:hover{
     text-decoration: underline;
     color: #cecece;
 }
-small.error {
-    color: red;
-    font-size: 0.9rem;
-}
+
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
@@ -692,3 +699,4 @@ small.error {
     
 }
 
+/* Please write in English language. */
