@@ -1,3 +1,5 @@
+// active navLinks using window.scroll and offsetTOp
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 
@@ -6,8 +8,8 @@ window.onscroll = () => {
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            currentSection =    section.getAttribute("id");
+        if (pageYOffset >= sectionTop - 80) {
+            currentSection =  section.getAttribute("id");
         }
         // console.log(currentSection);
     });
@@ -21,3 +23,4 @@ window.onscroll = () => {
         }
     });
 };
+
