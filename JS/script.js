@@ -113,8 +113,8 @@ navLinks.forEach((link) => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("open");
         navMenu.style.display = "none";
-        toggleButton.style.display = "block";
         cancel.style.display = "none";
+        toggleButton.style.display = "block";
         // toggleButton.style.display = "block";
     });
 });

@@ -497,6 +497,15 @@ footer aside a:hover{
     color: #cecece;
 }
 
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    align-items: center;
+    animation: ease-in-out;
+    font-size: 100px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
