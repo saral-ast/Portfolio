@@ -367,6 +367,7 @@ body {
     resize: none;
 }
 
+
 #contact button {
     background-color: #9900ff;
     color: white;
@@ -378,7 +379,10 @@ body {
     font-size: 1vw;
     cursor: pointer;
 }
-
+small.error {
+    color: red;
+    font-size: 0.9rem;
+}
 
 /* Resume Section */
 #resume {
@@ -584,6 +588,13 @@ footer aside a:hover{
         align-self: center;
     
     }
+    #contact input,
+    #contact textarea{
+        font-size: 3vw;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 3vw;
+    }
 
     footer{
         height: 40%;
@@ -666,8 +677,7 @@ footer aside a:hover{
 
     
     #contact #resume{
-        max-width: 100vw;
-        font-size: 3vw;
+        display: none;
 
     }
     #contact #resume button{
@@ -685,6 +695,13 @@ footer aside a:hover{
         /* font-size: large; */
     }
     #contact button{
+        font-size: 3vw;
+    }
+    #contact input,
+    #contact textarea{
+        font-size: 3vw;
+    }
+    ::-webkit-input-placeholder{
         font-size: 3vw;
     }
     footer{
