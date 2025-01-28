@@ -93,6 +93,7 @@ const cancelButton = document.querySelector(".fa-x");
 const navMenu = document.querySelector(".hidden");
 
 toggleButton.addEventListener("click", () => {
+    // navLinks.classList.add("open");
     navMenu.classList.add("open");
     navMenu.style.display = "grid"; // Set display to grid
     navMenu.style.gridTemplateColumns = "repeat(3, 1fr)"; // 3-column grid
@@ -115,10 +116,12 @@ cancelButton.addEventListener("click", () => {
 // Close menu on link click
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-        navMenu.style.display = "none";
-        cancelButton.style.display = "none";
-        toggleButton.style.display = "block";
-        h1.style.display = "block"; // Show h1 when menu is closed
+        if(navMenu.classList === "open") {
+            navMenu.classList.remove("open");
+            navMenu.style.display = "none";
+            cancelButton.style.display = "none";
+            toggleButton.style.display = "block";
+            h1.style.display = "block"; // Show h1 when menu is closed
+        }
     });
 });
